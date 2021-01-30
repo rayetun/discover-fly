@@ -50,6 +50,7 @@ nav ul li a:hover, a.active{
     border-radius: 5px;
     float: left;
     box-shadow: 0 0 20px #000;
+    min-height: 100px;
 }
 .booking-form h3{
     margin: 10px 0px;
@@ -117,7 +118,7 @@ nav ul li a:hover, a.active{
     margin-bottom: 25px;
 }
 
-.btn-style{
+#bookingBtn{
     display: block;
     width: 100%;
     padding: 10px;
@@ -130,8 +131,10 @@ nav ul li a:hover, a.active{
     cursor: pointer;
     position: relative;
     transition: 0.3s;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.btn-style:hover{
+#bookingBtn:hover{
     background: #000;
 }
 .amount{
@@ -145,4 +148,13 @@ label {
 
 .left,.right {
     margin-top: 5px;
+}
+#bookingMsg{
+    display: none;
+    background: #028a0f;
+    padding: 20px 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 15px;
 }

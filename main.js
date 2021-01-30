@@ -14,7 +14,6 @@ function handleFTicket(isIncrease){
     calculateTotal()
 }
 
-
 // Economy Ticket Option Handler Function
 function handleETicket(isIncrease){
     const eClassTicketInput = document.getElementById('eClassTicket');
@@ -31,7 +30,6 @@ function handleETicket(isIncrease){
 }
 
 // Total Ticket Price Function 
-
 function calculateTotal(){
     const fClassTicketInput = document.getElementById('fClassTicket');
     const fClassTicketCount = parseInt(fClassTicketInput.value);
@@ -50,4 +48,28 @@ function calculateTotal(){
        
 }
 
-// 
+// SUbmit Button Function
+const bookingBtn = document.getElementById('bookingBtn');
+function bookingMsg(){
+	const bookingMsg = document.getElementById("bookingMsg");
+    bookingMsg.style.display = "block";
+    bookingBtn.style.display = "none";
+
+    const fClassTicketInput = document.getElementById('fClassTicket');
+    const fClassTicketCount = parseInt(fClassTicketInput.value);
+    const eClassTicketInput = document.getElementById('eClassTicket');
+    const eClassTicketCount = parseInt(eClassTicketInput.value);
+    
+    const subTotalFare = fClassTicketCount * 150 + eClassTicketCount * 100;
+    document.getElementById('subTotal').innerText = subTotalFare + '.00';
+    const vatAmount = subTotalFare * 10 / 100;
+    document.getElementById('vatAmount').innerText = vatAmount + '.00';
+    const totalAmount = subTotalFare + vatAmount;
+    document.getElementById('totalAmount').innerText = totalAmount + '.00';
+
+    const totalTicket = fClassTicketCount + eClassTicketCount;
+    document.getElementById('ticketNum').innerText = totalTicket;
+    document.getElementById('ticketFare').innerText ='$ '+ totalAmount;
+
+}
+bookingBtn.addEventListener("click", bookingMsg);

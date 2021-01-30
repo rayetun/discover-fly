@@ -31,7 +31,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div class="booking-form" id="bookingForm">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -72,7 +72,7 @@
                     <button href="" class="fa fa-minus" onclick="handleETicket(false);"></button>
                 </div>
             </div>
-            <div class="calculations">
+            <div id="calculation" class="calculations">
                 <div class="amount">
                     <div class="left">
                         <p>Subtotal</p>
@@ -101,6 +101,9 @@
                 </div>
             </div>
             <button id="bookingBtn" class="btn-style">Book Now</button>
+            <div id="bookingMsg">
+                <p>You have bought  <span id="ticketNum"></span>  ticket and total fare is  <span id="ticketFare"></span></p>
+            </div>
         </div>
 
         <div class="booking-content">
