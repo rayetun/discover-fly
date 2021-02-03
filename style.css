@@ -66,7 +66,7 @@ nav ul li a:hover, a.active{
 .inp-width{
     min-width: 300px;
 }
-.plus-minus-btn button.fa {
+.plus-minus-btn p.fa {
     color: #ffffff;
     font-size: 15px;
     padding: 7px 10px;
@@ -78,16 +78,16 @@ nav ul li a:hover, a.active{
     border-radius: 3px;
     border: none;
 }
-.plus-minus-btn button.fa-plus{
+.plus-minus-btn p.fa-plus{
     background: #028a0f;
 }
-.plus-minus-btn a.fa:hover{
-    color: rgb(214, 198, 198);
+.plus-minus-btn p.fa:hover{
+    color: rgb(143, 129, 129);
 }
-.booking-form  .calculations{
+.booking-form .calculations{
     margin: 10px 0;
 }
-.booking-form  .calculations p{
+.booking-form .calculations p{
     font-weight: 500;
     margin-bottom: 10px;
 }
